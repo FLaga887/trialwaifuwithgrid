@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 252px 252px 252px 252px 252px 252px 252px;
+      grid-template-rows: 60px 352px 352px;
+      gap: 30px;
+    }
+
+    .first {
+      grid-column: span 7;
+      position: relative;
+    
+    }
+
+    .card {
+      background-color: aquamarine;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        margin: 0;
+        
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="judul">Waifu List</h1>
+  <div class="grid-container">
+    <div class="first card"><h2 class="sub-judul">Top 6 Waifu of the Year</h2></div>
+    <div class="card"><img src="./asset/Hayasaka Ai.png"></div>
+    <div class="card"><img src="./asset/Kasumigaoka Utaha.png"></div>
+    <div class="card"><img src="./asset/Mai Sakurajima.png"></div>
+    <div class="card"><img src="./asset/Raiden.png"></div>
+    <div class="card"><img src="./asset/Yukina.png"></div>
+    <div class="card"><img src="./asset/Zero Two.png"></div>
+  </div>
+
+</body>
+
+</html>
